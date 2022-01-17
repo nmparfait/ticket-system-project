@@ -25,6 +25,7 @@ ______________________________________________________________________
   --yello-color: #fba800;
   --nav-height: 60px;
   --space-top: 30px;
+  --size: 30px;
 }
 
 * {
@@ -111,4 +112,61 @@ img {
   color: var(--main-color);
 }
 
-/* end of navigation */
+/* -- mobile */
+.menu-mobile {
+  height: var(--size);
+  width: var(--size);
+  cursor: pointer;
+  z-index: 101;
+  position: relative;
+  align-items: center;
+  /*display: none;  */
+}
+
+.toggle-bar {
+  position: relative;
+}
+.toggle-bar,
+.toggle-bar::before,
+.toggle-bar::after {
+  width: var(--size);
+  height: 3px;
+  border-radius: 0.5rem;
+  background-color: var(--text-color);
+  transition: 0.4s;
+}
+
+.toggle-bar::before,
+.toggle-bar::after {
+  content: '';
+  position: absolute;
+  left: 0;
+}
+
+.toggle-bar::before {
+  top: -10px;
+}
+
+.toggle-bar::after {
+  bottom: -10px;
+}
+
+.menu-mobile.active .toggle-bar {
+  background-color: transparent;
+}
+
+.menu-mobile.active .toggle-bar::before {
+  transform-origin: top left;
+  transform: rotate(45deg);
+  left: 6px;
+}
+
+.menu-mobile.active .toggle-bar::after {
+  transform-origin: bottom left;
+  transform: rotate(-45deg);
+  left: 6px;
+}
+
+/* -- end of  mobile */
+
+/* end of navigation */ ;
