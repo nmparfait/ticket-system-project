@@ -112,6 +112,35 @@ img {
   color: var(--main-color);
 }
 
+/* dropdown */
+.dropdown-login {
+  display: none;
+  position: absolute;
+  background-color: var(--text-color);
+  min-width: 175px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-login a {
+  float: none;
+  color: var(--black);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-list a:hover {
+  background-color: var(--black);
+}
+
+.dropdown-login {
+  display: block;
+}
+
+/* end of dropdown */
+
 /* -- mobile */
 .menu-mobile {
   height: var(--size);
@@ -120,7 +149,7 @@ img {
   z-index: 101;
   position: relative;
   align-items: center;
-  /*display: none;  */
+  display: none;
 }
 
 .toggle-bar {
