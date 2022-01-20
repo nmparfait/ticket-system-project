@@ -121,6 +121,10 @@ img {
   display: flex;
   align-items: center;
 }
+
+.lista {
+  margin-top: 10px;
+}
 .present-block ul {
   text-align: right;
 }
@@ -162,6 +166,7 @@ input [type='radio'] {
   text-align: center;
   font-size: 20px;
   margin: 0 auto;
+  border-radius: 10px;
 }
 
 .confirm:hover {
@@ -195,6 +200,7 @@ input [type='radio'] {
   display: flex;
   align-items: center;
   padding: 0 20px;
+  margin-left: 80px;
 }
 
 .nav-menu li ~ li {
@@ -210,6 +216,61 @@ input [type='radio'] {
   color: var(--main-color);
 }
 
+.nav-right {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+/* search bar done  */
+.pesquisar {
+  font-size: 35px;
+  margin-right: 10px;
+  color: white;
+}
+
+.search-switcher-label {
+  margin: 0 15px;
+}
+.page-search {
+  position: relative;
+}
+.page-search-field {
+  width: 300px;
+  position: absolute;
+  margin-top: 15px;
+  right: 90px;
+  font-weight: 300;
+  font-size: 16px;
+  padding: 5px;
+  height: 30px;
+  -webkit-appearance: textfield;
+  display: none;
+  border-radius: 9px;
+  border: 2px solid #1a1713;
+  outline: none;
+}
+.page-search-field-label {
+  position: absolute;
+  right: 85px;
+  top: 5px;
+  height: 30px;
+  background: transparent;
+  width: 100px;
+  line-height: 30px;
+  display: none;
+  color: #000;
+  margin-top: 10px;
+}
+
+#search-switcher:checked ~ .page-search-field {
+  display: block;
+}
+#search-switcher:checked ~ .page-search-field-label {
+  display: block;
+}
+/* end of search bar done  */
 /* dropdown */
 .dropdown-login {
   display: none;

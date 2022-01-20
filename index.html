@@ -51,26 +51,6 @@
             <!-- menu -->
             <ul class="nav-menu" id="nav-menu">
               <li><a href="#">sobre</a></li>
-              <!-- dropdown gift -->
-
-              <!-- 
-                <div class="dropdown-btn">
-                <div class="icon">
-                  <li>
-                    <a href="#">
-                      <i class="bx bx-gift"></i>
-                    </a>
-                  </li>
-                </div>
-                <div class="dropdown-list">
-                  <li><a href="#">vale presente</a></li>
-                  <li><a href="#">vender</a></li>
-                  <li><a href="#">promoção</a></li>
-                </div>
-              </div>
-               -->
-              <!-- end of dropdown gift -->
-
               <li><a href="#">cinema</a></li>
               <li><a href="#">esport</a></li>
               <li><a href="#">teatro</a></li>
@@ -88,7 +68,7 @@
                     </div>
 
                     <hr />
-                    <p class="title">Lista de presente:</p>
+                    <p class="title lista">Lista de presente:</p>
                     <div class="row-block flex-block">
                       <input type="radio" id="us-id" name="c-group" />
                       <label for="us-id">nacional</label>
@@ -111,6 +91,24 @@
 
           <!-- user profil -->
           <div class="nav-right">
+            <!-- search filed -->
+            <div class="page-search">
+              <input type="checkbox" id="search-switcher" hidden />
+
+              <input
+                type="search"
+                placeholder="Pesquise o evento..."
+                class="page-search-field"
+                id="page-search-field"
+              />
+              <label for="page-search-field" class="page-search-field-label"
+                >Search >></label
+              >
+              <label for="search-switcher" class="search-switcher-label"
+                ><i class="bx bx-search-alt bx-border pesquisar"></i
+              ></label>
+            </div>
+            <!-- end of search field -->
             <div class="dropdown">
               <div class="icon user-profil">
                 <span><i class="bx bx-user-circle"></i></span>
