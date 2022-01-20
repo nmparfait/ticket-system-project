@@ -1,10 +1,10 @@
-/* 
+/*
 font-family: 'Dancing Script', cursive;
 font-family: 'Moon Dance', cursive;
 font-family: 'Roboto', sans-serif;
 */
 
-/* yellow 
+/* yellow
 rgba(251,168,0,255) ou #fba800
 #976702
 white
@@ -60,7 +60,7 @@ img {
 
 .container {
   max-width: 1920px;
-  padding: 0 40px;
+  padding: 0 30px;
   margin: auto;
 }
 
@@ -73,6 +73,104 @@ img {
   z-index: 99;
   background-color: var(--black);
 }
+/* ideas  */
+.nav-left {
+  display: flex;
+}
+
+.presente li a {
+  list-style-type: square;
+}
+
+.title {
+  text-transform: uppercase;
+  color: #fba800;
+}
+.presente-block {
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 35px;
+  padding: 15px 15px 15px;
+  width: 250px;
+  left: -70px;
+  z-index: 1000;
+  box-sizing: border-box;
+  display: none;
+}
+
+.presente-block a {
+  margin: 50px;
+  text-transform: lowercase !important;
+  float: none;
+}
+
+.block-1 {
+  margin-bottom: 10px;
+}
+
+.row-block {
+  margin: 10px;
+}
+
+#international-switcher:checked ~ .presente-block {
+  display: block;
+}
+.international-edition {
+  position: relative;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.present-block ul {
+  text-align: right;
+}
+.presente-block ul li {
+  margin-bottom: 20px;
+  padding: 0 15px;
+}
+.presente-block hr {
+  background: transparent;
+  border: 0;
+  border-top: 1px solid #bfbfbf;
+}
+.presente-block p {
+  text-align: right;
+}
+.flex-block {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.flex-block label {
+  margin-top: -18px;
+  margin-left: 20px;
+  margin-bottom: 10px;
+  float: none;
+  display: block;
+}
+
+input [type='radio'] {
+  appearance: none;
+  color: #000000;
+}
+
+.confirm {
+  border: 1px solid #fff;
+  color: black;
+  padding: 5px;
+  text-align: center;
+  font-size: 20px;
+  margin: 0 auto;
+}
+
+.confirm:hover {
+  background-color: #fba800;
+  color: #fff;
+  outline: none;
+}
+
+/* ideas  */
 
 .nav {
   display: flex;

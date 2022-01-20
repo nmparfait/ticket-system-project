@@ -39,55 +39,89 @@
     <div class="nav-group">
       <div class="container">
         <div class="nav">
-          <!-- logo -->
-          <a href="#" class="logo">
+          <div class="nav-left">
+            <!-- logo -->
             <a href="#" class="logo">
-              <i class="bx bxs-hourglass-bottom bx-tada main-color"></i
-              >Tick<span class="main-color">e</span>tly
+              <a href="#" class="logo">
+                <i class="bx bxs-hourglass-bottom bx-tada main-color"></i
+                >Tick<span class="main-color">e</span>tly
+              </a>
             </a>
-          </a>
-          <!-- end of logo -->
-          <!-- menu -->
-          <ul class="nav-menu" id="nav-menu">
-            <li>
-              <a href="#"><i class="bx bxs-home home"></i></a>
-            </li>
-            <!-- dropdown gift -->
-            <div class="dropdown-btn">
-              <div class="icon">
-                <li>
-                  <a href="#">
-                    <i class="bx bx-gift"></i>
-                  </a>
-                </li>
-              </div>
-              <div class="dropdown-list">
-                <li><a href="#">vale presente</a></li>
-                <li><a href="#">vender</a></li>
-                <li><a href="#">promoção</a></li>
-              </div>
-            </div>
-            <!-- end of dropdown gift -->
+            <!-- end of logo -->
+            <!-- menu -->
+            <ul class="nav-menu" id="nav-menu">
+              <li><a href="#">sobre</a></li>
+              <!-- dropdown gift -->
 
-            <li><a href="#">sobre</a></li>
-            <li><a href="#">cinema</a></li>
-            <li><a href="#">esport</a></li>
-            <li><a href="#">teatro</a></li>
-            <li><a href="#">show</a></li>
-            <!-- user profil -->
-            <li>
-              <div class="dropdown">
-                <div class="icon user-profil">
-                  <span><i class="bx bx-user-circle"></i></span>
+              <!-- 
+                <div class="dropdown-btn">
+                <div class="icon">
+                  <li>
+                    <a href="#">
+                      <i class="bx bx-gift"></i>
+                    </a>
+                  </li>
                 </div>
                 <div class="dropdown-list">
-                  <a href="#">Login</a>
-                  <a href="#">Cadastre-se</a>
+                  <li><a href="#">vale presente</a></li>
+                  <li><a href="#">vender</a></li>
+                  <li><a href="#">promoção</a></li>
                 </div>
               </div>
-            </li>
-            <!-- end of user profil -->
-          </ul>
+               -->
+              <!-- end of dropdown gift -->
+
+              <li><a href="#">cinema</a></li>
+              <li><a href="#">esport</a></li>
+              <li><a href="#">teatro</a></li>
+              <li><a href="#">show</a></li>
+              <li>
+                <div class="international-edition">
+                  <input type="checkbox" id="international-switcher" hidden />
+                  <label for="international-switcher" class="title">
+                    Vale presente <i class="bx bxs-gift gift"></i>
+                  </label>
+                  <div class="presente-block">
+                    <div class="block-1">
+                      <a href="#">presente virtual</a>
+                      <a href="#">presente físico</a>
+                    </div>
+
+                    <hr />
+                    <p class="title">Lista de presente:</p>
+                    <div class="row-block flex-block">
+                      <input type="radio" id="us-id" name="c-group" />
+                      <label for="us-id">nacional</label>
+                      <input
+                        type="radio"
+                        id="inter-id"
+                        name="c-group"
+                        checked
+                      />
+                      <label for="inter-id">Internacional</label>
+                    </div>
+                    <div class="row-block flex-block">
+                      <button class="confirm">Confirmar</button>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- user profil -->
+          <div class="nav-right">
+            <div class="dropdown">
+              <div class="icon user-profil">
+                <span><i class="bx bx-user-circle"></i></span>
+              </div>
+              <div class="dropdown-list">
+                <a href="#">Login</a>
+                <a href="#">Cadastre-se</a>
+              </div>
+            </div>
+          </div>
+          <!-- end of user profil -->
           <!-- celular mobile menu -->
           <div class="menu-mobile" id="menu-mobile">
             <div class="toggle-bar"></div>
