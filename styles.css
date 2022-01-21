@@ -73,6 +73,7 @@ img {
   display: inline-flex;
   position: relative;
   align-items: center;
+  outline: none;
 }
 
 .btn-hover::before {
@@ -211,10 +212,15 @@ input [type='radio'] {
   border-radius: 10px;
 }
 
-.confirm:hover {
+/* .confirm:hover {
   background-color: #fba800;
   color: #fff;
   outline: none;
+} */
+
+.confirmar {
+  color: var(--text-color);
+  padding-left: -10px;
 }
 
 /* ideas  */
@@ -501,6 +507,11 @@ input [type='radio'] {
 
 .item-action {
   margin-top: var(--space-top);
+}
+
+.icon {
+  color: var(--black);
+  font-weight: bold;
 }
 
 .carousel-nav-center {
