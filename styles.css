@@ -681,10 +681,99 @@ input [type='radio'] {
 
 /* END OF ABOUT SECTION */
 
+/* LANCAMENTO */
+.lancamento-content-title {
+  font-size: 5rem;
+  line-height: 5rem;
+  font-weight: 900;
+}
+
+.lancamento-infos {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: calc(var(--space-top) / 2);
+}
+
+.lancamento-info {
+  display: flex;
+  align-items: center;
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-right: 10px;
+}
+
+.lancamento-info span {
+  margin-left: 5px;
+}
+
+.lancamento-info i {
+  color: var(--main-color);
+}
+
+.lancamento-info ~ .lancamento-info {
+  margin-left: 5px;
+}
+
+.item-content-description {
+  font-size: 1.15rem;
+  margin-top: var(--space-top);
+  line-height: 1.5rem;
+}
+
+.lancamento-elemento {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  padding-top: 140%;
+  cursor: pointer;
+}
+
+.lancamento-elemento img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: transform 0.3s linear;
+}
+
+.lancamento-elemento:hover img {
+  transform: scale(1.2);
+}
+
+.lancamento-item-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 5px;
+  background-color: rgba(37, 35, 35, 0.8);
+}
+
+.lancamento-item-content::before {
+  content: '';
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
+}
+
+.lancamento-item-title {
+  color: var(--text-color);
+  font-size: 1.5rem;
+  position: relative;
+  font-weight: 700;
+}
+
+/* END OF LANCAMENTO */
+
 /* FOOTER */
 
 footer .section {
   margin-top: 80px;
+  margin-bottom: 80px;
   padding-bottom: 80px;
   position: relative;
   background-color: rgba(0, 0, 0, 0.5);
