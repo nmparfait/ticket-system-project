@@ -660,16 +660,15 @@ input [type='radio'] {
 }
 
 .about-img-photo::before {
-    content: '';
-    position: absolute;
-    width: 80%;
-    height: 60%;
-    border: 0.5rem solid var(--text-color);
-    box-sizing: border-box;
-    top: -1.5rem;
-    right: -1.5rem;
+  content: '';
+  position: absolute;
+  width: 80%;
+  height: 60%;
+  border: 0.5rem solid var(--text-color);
+  box-sizing: border-box;
+  top: -1.5rem;
+  right: -1.5rem;
 }
-
 
 .about-img::after {
   content: '';
@@ -679,7 +678,8 @@ input [type='radio'] {
   position: absolute;
   background: ivory;
   z-index: -2;
-} */
+}
+*/
 
 /* END OF ABOUT SECTION */
 
@@ -764,12 +764,65 @@ input [type='radio'] {
 
 .lancamento-item-title {
   color: var(--text-color);
-  font-size: 1.8'u rem;
+  font-size: 1.8rem;
   position: relative;
   font-weight: 700;
 }
-
 /* END OF LANCAMENTO */
+
+/* PLANOS */
+.prices {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: space-between;
+  margin: 2rem 8rem;
+}
+
+.pricing-card {
+  color: var(--text-color);
+  text-align: center;
+  padding: 3rem 3rem;
+  margin: 1rem 2rem;
+  border: 2px solid #c0392b;
+}
+
+.pricing-card__list {
+  list-style-type: none;
+}
+
+.pricing-card__item {
+  display: flex;
+  justify-content: center;
+  margin: 1.2rem 0;
+  font-size: 1.2rem;
+}
+
+.pricing-card__title {
+  color: #bfbfbf;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  line-height: 20px;
+}
+
+.master {
+  border: 4px solid #6e6c6c;
+  border-radius: 20px;
+}
+
+.master:hover {
+  color: var(--box-bg);
+  background-color: var(--yello-color);
+  border: 4px solid var(--main-color);
+  box-shadow: 4px 4px 15px 7px #000000;
+}
+
+.master:hover .pricing-card__title {
+  color: var(--box-bg);
+}
+/* END OF PLANOS */
 
 /* FOOTER */
 
