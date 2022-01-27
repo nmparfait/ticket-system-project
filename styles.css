@@ -652,34 +652,29 @@ input [type='radio'] {
 
 .about-img {
   width: 100%;
+  position: relative;
 }
 
 .about-img-photo {
   border-radius: 30px;
   width: 80%;
+  transition: transform 0, 3s ease-in-out;
 }
 
-.about-img-photo::before {
+.about-img-photo:hover {
+  transform: translateY(20px);
+}
+
+/* .about-img-photo::before {
   content: '';
   position: absolute;
-  width: 80%;
+  width: 100%;
   height: 60%;
-  border: 0.5rem solid var(--text-color);
+  border: 1.5rem solid var(--text-color);
   box-sizing: border-box;
   top: -1.5rem;
   right: -1.5rem;
-}
-
-.about-img::after {
-  content: '';
-  top: -2px;
-  left: -2px;
-  right: -2px;
-  position: absolute;
-  background: ivory;
-  z-index: -2;
-}
-*/
+} */
 
 /* END OF ABOUT SECTION */
 
@@ -785,6 +780,11 @@ input [type='radio'] {
   padding: 3rem 3rem;
   margin: 1rem 2rem;
   border: 2px solid #c0392b;
+  transition: transform 0.3s ease-in-out;
+}
+
+.pricing-card:hover {
+  transform: translateY(-20px);
 }
 
 .pricing-card__list {
@@ -822,9 +822,82 @@ input [type='radio'] {
 .master:hover .pricing-card__title {
   color: var(--box-bg);
 }
+
+.pricing-card__icon {
+  margin-right: 0.75rem;
+}
 /* END OF PLANOS */
 
+/* maps section */
+
+.flexbox-parent {
+  max-width: 95vw;
+  margin: 2rem auto;
+}
+
+.map {
+  position: relative;
+}
+
+.map-item {
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.map-item__icon {
+  font-size: 2rem;
+  color: var(--main-color);
+}
+
+.map-item__title {
+  text-transform: capitalize;
+  margin: 1rem 0;
+  color: var(--blue);
+}
+
+.map-item__text {
+  width: 50%;
+  margin: 0 auto;
+  color: var(--grey);
+}
+
+/* map infos */
+
+@media screen and (min-width: 768px) {
+  .map__info {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    background: rgba(46, 40, 42, 0.8);
+  }
+
+  .map-item {
+    flex: 0 0 33.33%;
+    margin: 0;
+  }
+
+  .map-item__text {
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .flexbox-parent--medium {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+
+/* end of map infos */
+
 /* FOOTER */
+
+footer {
+  padding: 2rem;
+}
 
 footer .section {
   margin-top: 80px;
