@@ -37,7 +37,7 @@
     <link rel="stylesheet" href="app-grid.css" />
     <!-- end of styles  link -->
 
-    <title>Compra o seu ticket here</title>
+    <title>Compra o seu ticket aqui</title>
   </head>
   <body>
     <!-- NAV -->
@@ -49,7 +49,6 @@
             <a href="#" class="logo" title="logo do site">
                 <i class="bx bxs-hourglass-bottom bx-tada main-color"></i
                 >Tick<span class="main-color">e</span>tly
-             
             </a>
             <!-- end of logo -->
             <!-- menu -->
@@ -66,17 +65,28 @@
                     Vale presente <i class="bx bxs-gift gift"></i>
                   </label>
                   <div class="presente-block">
-                    <p class="title-01 lista">Tipo de presente:</p>
-                    <div class="block-1" id="bloco">
-                      <a href="#" title="link do site">presente virtual</a>
-                      <a href="#" title="link do site">cartão presente</a>
-                      <a href="#" title="link do site">enviar presente </a>
+                    <p class="title-01 lista">Tipo de presente :</p>
+                    <!-- primeiro bloco -->
+                    <div class="block-1">
+                      <div class="row-block flex-block card-gift">
+                        <input type="radio" id="us-id" name="c-group" checked/>
+                        <label for="us-id">presente virtual</label>
+                        <input type="radio" id="us-id" name="c-group" />
+                        <label for="us-id">cartão presente</label>
+                        <input
+                          type="radio"
+                          id="inter-id"
+                          name="c-group"
+                        />
+                        <label for="inter-id">enviar presente</label>
+                      </div>
                     </div>
-
+                    <!-- end of primeiro bloco -->
                     <hr />
-                    <p class="title lista">Lista de presente:</p>
-                    <div class="row-block flex-block">
-                      <input type="radio" id="us-id" name="c-group" />
+                    <!-- segundo bloco -->
+                    <p class="title lista">Lista de presente :</p>
+                    <div class="col-block flex-block check-two">
+                      <input type="radio" id="us-id" name="c-group" checked/>
                       <label for="us-id">local</label>
                       <input type="radio" id="us-id" name="c-group" />
                       <label for="us-id">nacional</label>
@@ -84,18 +94,17 @@
                         type="radio"
                         id="inter-id"
                         name="c-group"
-                        checked
+                        
                       />
-                      <label for="inter-id">Internacional</label>
-                    </div>
-                    <!-- <div class="row-block flex-block">
-                       <button class="btn confirm">Confirmar</button> 
-                     </div>
-                        -->
+                      <label for="us-id">Internacional</label>
                       <a href="#" class="btn btn-hover">
                         <i class="bx bx-cart-alt icon"></i>
                         <span class="confirmar">card</span>
                       </a>
+                    </div>
+                    <!-- end of segundo bloco -->
+
+                      
                   </div>
                 </div>
               </li>
